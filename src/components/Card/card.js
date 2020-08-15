@@ -26,7 +26,7 @@ function card(props) {
         title="Card title"
         description="This is the description"
       />
-    </Card>,
+    </Card>
     )
 }
 
