@@ -1,6 +1,6 @@
-import React from './node_modules/react'
-import { Card, Avatar } from './node_modules/antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from './node_modules/@ant-design/icons';
+import React from 'react'
+import { Card, Avatar } from 'antd';
+import { EditOutlined, EllipsisOutlined, SettingOutlined } from './@ant-design/icons';
 
 const { Meta } = Card;
 

@@ -1,6 +1,5 @@
-import React from './node_modules/react';
-import { Row, Col ,Menu , Dropdown } from './node_modules/antd';
-import { Avatar } from './node_modules/antd';
+import React from 'react';
+import { Row, Col ,Menu , Dropdown ,Avatar } from 'antd';
 import styles from './Header.module.css'
 
 const menu = (

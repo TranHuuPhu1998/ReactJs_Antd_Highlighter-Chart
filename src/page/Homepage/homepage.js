@@ -1,5 +1,4 @@
-import React from './node_modules/react';
-import './node_modules/antd/dist/antd.css';
+import React from 'react';
 import MenuCom from "../../components/Menu/menu.js";
 import Header from '../../components/Header/header.js';
 
