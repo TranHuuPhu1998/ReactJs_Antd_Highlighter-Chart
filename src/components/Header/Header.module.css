@@ -1,0 +1,19 @@
+.header_logo{
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: 1px 0px 1px 1px  navy;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.header_logo span{
+    cursor: pointer;
+    font-weight: bold;
+    color: #afafaf;
+    margin-left: 10px;
+}
+.header_logo span:hover{
+    color: blueviolet;
+}
+.header_logo span:visited{
+    color: red;
+}
