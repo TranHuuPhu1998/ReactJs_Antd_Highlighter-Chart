@@ -1,10 +1,26 @@
 import React from 'react'
-import Card from '../Card/card.js';
+import Cards from '../Card/card.js';
+import { Col, Row } from 'antd';
+
 function listCard(props) {
   return (
-    <>
-      <Card/>
-    </>
+    <Row gutter={16}>
+      <Col span={8}>
+        <Cards/>
+      </Col>
+      <Col span={8}>
+        <Cards/>
+      </Col>
+      <Col span={8}>
+        <Cards/>
+      </Col>
+      <Col span={8}>
+        <Cards/>
+      </Col>
+      <Col span={8}>
+        <Cards/>
+      </Col>
+    </Row>
   )
 }
 
