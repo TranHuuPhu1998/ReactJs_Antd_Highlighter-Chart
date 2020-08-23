@@ -26,7 +26,7 @@ const menu = (
 function Header() {
 	
 	return (
-		<Row>
+		<Row style={{position:'fixed',width:'100%',zIndex:1}}>
 			<Col xs={0} sm={0} md={0} lg={4} xl={4}>
 				<div className={styles.header_logo}>
 					<img src="./images/learn.svg" alt="learn" />
