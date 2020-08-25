@@ -1,18 +1,13 @@
-import React ,{useState}from "react";
-import { Button, Tooltip, Row, Col, Card, Space, Tabs } from 'antd';
-import { SearchOutlined, EditOutlined } from '@ant-design/icons';
-import styles from './Button.module.css';
+import React from "react";
+import { Button, Tooltip, Row, Col, Card, Space } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
+// import styles from './Button.module.css';
 
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark , okaidia} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import TabPaneHighLigh from "../TabPaneHighLigh/TabPaneHighLigh.js";
-
-const { TabPane } = Tabs;
 const codeString = 
 `
 import { Button } from 'antd';
-
 ReactDOM.render(
   <>
     <Button type="primary">Primary Button</Button>
@@ -25,12 +20,10 @@ ReactDOM.render(
   mountNode,
 );
 `
-
 const code_string_1 = 
 `
 import { Button, Tooltip } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-
 ReactDOM.render(
   <>
     <Tooltip title="search">

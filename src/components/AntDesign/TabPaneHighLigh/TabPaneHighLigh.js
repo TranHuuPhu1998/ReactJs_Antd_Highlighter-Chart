@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Tooltip, Row, Col, Card, Space, Tabs } from 'antd';
-import { SearchOutlined, EditOutlined } from '@ant-design/icons';
+import { Card, Tabs } from 'antd';
+import { EditOutlined } from '@ant-design/icons';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark , okaidia} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { okaidia} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const { TabPane } = Tabs;
 function TabPaneHighLigh(props) {

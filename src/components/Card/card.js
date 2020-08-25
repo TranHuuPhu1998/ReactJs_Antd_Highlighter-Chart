@@ -13,11 +13,6 @@ function card(props) {
           src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
         />
       }
-      // actions={[
-      //   <SettingOutlined key="setting" />,
-      //   <EditOutlined key="edit" />,
-      //   <EllipsisOutlined key="ellipsis" />,
-      // ]}
     >
       <Meta
         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}

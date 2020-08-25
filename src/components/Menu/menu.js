@@ -43,7 +43,12 @@ function MenuCom() {
 					<Link to="/ant/calendar">
 						calendar
 					</Link>
-				</Menu.Item>
+					</Menu.Item>
+					<Menu.Item key="4">
+						<Link to="/ant/chart">
+							AntDesign Chart
+						</Link>
+					</Menu.Item>
 				</Menu.ItemGroup>
 			</SubMenu>
 			<SubMenu
@@ -69,7 +74,6 @@ function MenuCom() {
 						Nội Quy
 						</Link>
 					</Menu.Item>
-			
 			</SubMenu>
 			<SubMenu
 				key="sub4"
@@ -83,8 +87,12 @@ function MenuCom() {
 					<Link to="/highligh">
 						highligh
 					</Link>
-				</Menu.Item>
-				
+				</Menu.Item>	
+				<Menu.Item key="2">
+					<Link to="/react/chart">
+						Chart JS
+					</Link>
+				</Menu.Item>			
 			</SubMenu>
 		</Menu>
 	);

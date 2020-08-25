@@ -7,7 +7,8 @@ import AntButton from "../components/AntDesign/Button/ButtonAnt.js";
 import AntForm from "../components/AntDesign/Form/form.js";
 import HighLigh from "../components/AntDesign/HighLigh/HighLigh.js";
 import Calendar from "../components/AntDesign/Calendar/Calendar.js";
-
+import Chart from "../components/AntDesign/Chart/Chart.js";
+import ReactChartJS from "../components/ReactChartJs/Chart.js";
 export const routes = [
     {
         path: "/",
@@ -64,8 +65,21 @@ export const routes = [
         main: () => (
             <Calendar />
         )
-    }
-
+    },
+    {
+        path: "/ant/chart",
+        exact: false,
+        main: () => (
+            <Chart />
+        )
+    },
+    {
+        path: "/react/chart",
+        exact: false,
+        main: () => (
+            <ReactChartJS />
+        )
+    },
 ];
 
 export default routes;

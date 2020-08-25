@@ -1,12 +1,11 @@
 import React from 'react';
-import MenuCom from "../../components/Menu/menu.js";
+import MenuCom from "../../components/Menu/Menu.js";
 import Header from '../../components/Header/header.js';
-import ListCard from "../../components/ListCard/listCard.js";
-import styles from "./Homepage.module.css";
+
 import { Row, Col } from 'antd';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "../../routes/routerlayout"
-
+// import styles from "./Homepage.module.css";
 function homepage(props) {
     const showRouterPage = routes => {
         var rs = null;
