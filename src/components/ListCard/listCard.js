@@ -14,7 +14,6 @@ const style = { background: '#0092ff', padding: '8px 0' };
 export default (props) => {
   const dispatch = useDispatch();
   const data = useSelector(state => state.FetchData);
-  console.log("listCard -> data", data)
   useEffect(() => {
     async function fetchData() {
         await dispatch(actFetchAllDataRequest());

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "sh ./deploy-surge.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +20,7 @@
     "highlight.js": "^10.1.2",
     "react-highlight.js": "^1.0.7",
     "react-scripts": "^3.4.3",
-    "react-syntax-highlighter": "^13.4.0"
+    "react-syntax-highlighter": "^13.5.1"
   },
   "browserslist": {
     "production": [

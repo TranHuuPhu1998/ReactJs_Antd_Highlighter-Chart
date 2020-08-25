@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu } from 'antd';
 import {Link} from "react-router-dom";
+import styles from './Menu.module.css';
 const { SubMenu } = Menu;
 const handleClick = e => {
 	console.log('click ', e);
@@ -10,7 +11,8 @@ function MenuCom() {
 	return (
 		<Menu
 			onClick={handleClick}
-			style={{ width: 225,height:"90vh",position:"fixed",top:67,overflowY:"scroll" }}
+			className={styles.menu}
+			style={{ width: 317,height:"90vh",position:"fixed",top:67,overflowY:"scroll" }}
 			defaultSelectedKeys={["1"]}
 			defaultOpenKeys={["sub1"]}
 			mode="inline"
@@ -37,6 +39,11 @@ function MenuCom() {
 								Button
 							</Link>
 					</Menu.Item>
+					<Menu.Item key="3">
+					<Link to="/ant/calendar">
+						calendar
+					</Link>
+				</Menu.Item>
 				</Menu.ItemGroup>
 			</SubMenu>
 			<SubMenu
@@ -68,10 +75,16 @@ function MenuCom() {
 				key="sub4"
 				title={
 					<span>
-						<span>Nhóm</span>
+						<span>Leaning React</span>
 					</span>
 				}
 			>
+				<Menu.Item key="1">
+					<Link to="/highligh">
+						highligh
+					</Link>
+				</Menu.Item>
+				
 			</SubMenu>
 		</Menu>
 	);
