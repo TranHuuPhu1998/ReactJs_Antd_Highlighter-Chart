@@ -1,35 +1,43 @@
-import React from 'react'
-import { Calendar, Alert } from 'antd';
+import React , {useState} from 'react'
+import { Calendar, Alert,Row ,Col } from 'antd';
 import moment from 'moment';
+import TabPaneHighLigh from '../TabPaneHighLigh/TabPaneHighLigh.js';
 
-class _Calendar extends React.Component {
-  state = {
-    value: moment('2017-01-25'),
-    selectedValue: moment('2017-01-25'),
+function  _Calendar(){
+  const [value,setValue] = useState(moment('2017-01-25'));
+  const [selectedValue , setSelectedValue] = useState(moment('2017-01-25'))
+
+  const onSelect = value => {
+    setValue(value);
+    setSelectedValue(value);
   };
 
-  onSelect = value => {
-    this.setState({
-      value,
-      selectedValue: value,
-    });
+  const onPanelChange = value => {
+    setValue(value);
   };
 
-  onPanelChange = value => {
-    this.setState({ value });
-  };
-
-  render() {
-    const { value, selectedValue } = this.state;
+  const code = `
+      import { Calendar } from 'antd';
+    
+      function onPanelChange(value, mode) {
+        console.log(value.format('YYYY-MM-DD'), mode);
+      }
+    
+      ReactDOM.render(<Calendar onPanelChange={onPanelChange} />, mountNode);
+    `
     return (
-      <>
-        <Alert
-          message={`You selected date: ${selectedValue && selectedValue.format('YYYY-MM-DD')}`}
-        />
-        <Calendar value={value} onSelect={this.onSelect} onPanelChange={this.onPanelChange} />
-      </>
+      <Row>
+        <h1>AntDesign Calendar</h1>
+        <Col span={20} offset={2}>
+          <Alert
+            message={`You selected date: ${selectedValue && selectedValue.format('YYYY-MM-DD')}`}
+          />
+          <Calendar value={value} onSelect={onSelect} onPanelChange={onPanelChange} />
+          <TabPaneHighLigh codeString={code}/>
+        </Col>
+      </Row>
     );
-  }
+  
 }
 
 export default _Calendar;

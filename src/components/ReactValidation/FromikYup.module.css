@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__item{
+    width: 30%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.from__name{
+    text-align: start;
+    color: #cccccc;
+    font-weight: bold;
+}
+.form__item_last{
+    width: 30%;
+}
+.form__item_last button{
+    font-weight: bold;
+    margin-top: 50px;
+    color: brown;
+    width: 100%;
+}
+.from__error{
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+}

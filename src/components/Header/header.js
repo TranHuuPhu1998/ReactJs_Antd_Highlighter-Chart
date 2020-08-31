@@ -1,7 +1,12 @@
 import React from 'react';
 import { Row, Col ,Menu , Dropdown ,Avatar } from 'antd';
-import styles from './Header.module.css'
-
+import styles from './Header.module.css';
+import discussInactive from './images/discuss-inactive.png';
+import juicyLlagSprite from './images/juicy-flag-sprite-8.png';
+import moreInactive from './images/more-inactive.png';
+import shopStorefrontInactive from './images/shop-storefront-inactive.png';
+import avatar from './images/avatar.jpg';
+import learn from './images/learn.png'
 const menu = (
   <Menu>
     <Menu.Item style={{fontWeight:"bold",color:"afafaf"}}>
@@ -26,10 +31,10 @@ const menu = (
 function Header() {
 	
 	return (
-		<Row style={{position:'fixed',width:'100%',zIndex:1}}>
+		<Row style={{position:'fixed',width:'100%',zIndex:10}} className={styles.header}>
 			<Col xs={0} sm={0} md={0} lg={4} xl={4}>
 				<div className={styles.header_logo}>
-					<img src="./images/learn.svg" alt="learn" />
+					<img src={learn} alt="learn" />
 					<span>Học</span>
 				</div>
 			</Col>
@@ -37,25 +42,25 @@ function Header() {
 				<div className={styles.header_logo}>
 					<Row>
 						<Col xs={{ span: 3, offset: 1 }} lg={{ span: 3, offset: 3 }}>
-						<img src="./images/discuss-inactive.svg" alt="svg"/>
+						<img src={discussInactive} alt="svg"/>
 						<span>Thảo Luận</span>
             </Col>
 						<Col xs={{ span: 3, offset: 1 }} lg={{ span: 3, offset: 1 }}>
-						<img src="./images/shop-storefront-inactive.svg" alt="shop"/>
+						<img src={shopStorefrontInactive} alt="shop"/>
 						<span>Cửa Hàng</span>
             </Col>
 						<Col xs={{ span: 3, offset: 1 }} lg={{ span: 3, offset: 1 }}>
-							<img src="./images/more-inactive.svg" alt="shop"/>
+							<img src={moreInactive} alt="shop"/>
 							
 							<Dropdown overlay={menu} placement="bottomCenter" arrow>
 								<span>Xem Thêm</span>
 							</Dropdown>
             </Col>
 						<Col xs={{ span: 3, offset: 1 }} lg={{ span: 3, offset: 1 }}>
-							<Avatar shape="square" size={46} src="./images/juicy-flag-sprite-8.svg" alt="juicy-flag-sprite-8"/>
+							<Avatar shape="square" size={46} src={juicyLlagSprite} alt="juicy-flag-sprite-8"/>
             </Col>
 						<Col xs={{ span: 3, offset: 1 }} lg={{ span: 3, offset: 1 }}>
-				    <Avatar size={46} src="./images/avatar.jpg" alt="avatar"/>
+				    <Avatar size={46} src={avatar} alt="avatar"/>
             </Col>
 					</Row>
 				</div>

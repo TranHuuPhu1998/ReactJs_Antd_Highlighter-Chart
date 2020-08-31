@@ -14,7 +14,7 @@ function TabPaneHighLigh(props) {
                 {/* There are primary button, default button, dashed button, text button and link button in antd. */}
                 <span>{props.type}</span>
                 </TabPane>
-                  <TabPane tab="Tab 2" key="2">
+                  <TabPane tab="Code" key="2">
                     <SyntaxHighlighter 
                       language="javascript" 
                       style={okaidia} 

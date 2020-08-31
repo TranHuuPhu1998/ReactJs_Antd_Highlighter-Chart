@@ -1,4 +1,4 @@
-import React, { useRef , useEffect , useState } from 'react';
+import React, { useRef } from 'react';
 import { Line } from '@ant-design/charts';
 
 function Chart(props) {
@@ -35,47 +35,6 @@ function Chart(props) {
         yField: 'value',
     };
 
-    const config_tow = {
-        title: {
-            visible: true,
-            text: '2000 ~ 2018',
-          },
-          description: {
-            visible: true,
-            text: 'GDP',
-          },
-          padding: [20, 100, 30, 80],
-          forceFit: true,
-          data,
-          xField: 'year',
-          yField: 'gdp',
-          seriesField: 'name',
-          xAxis: {
-            type: 'dateTime',
-            label: {
-              visible: true,
-              autoHide: true,
-            },
-          },
-          yAxis: {
-            formatter: (v) => `${(v / 10e8).toFixed(1)} B`,
-          },
-          legend: {
-            visible: false,
-          },
-          label: {
-            visible: true,
-            type: 'line',
-          },
-          animation: {
-            appear: {
-              animation: 'clipingWithData',
-            },
-          },
-          smooth: true,
-        
-    }
-    
     const ref = useRef();
     
     const downloadImage = () => {

@@ -9,6 +9,9 @@ import HighLigh from "../components/AntDesign/HighLigh/HighLigh.js";
 import Calendar from "../components/AntDesign/Calendar/Calendar.js";
 import Chart from "../components/AntDesign/Chart/Chart.js";
 import ReactChartJS from "../components/ReactChartJs/Chart.js";
+import Validation from "../components/ReactValidation/Validation.js";
+import FormikYup from "../components/ReactValidation/FormikYup.js";
+import CustomSelect from "../components/CustomSelect/CustomSelect.js";
 export const routes = [
     {
         path: "/",
@@ -80,6 +83,30 @@ export const routes = [
             <ReactChartJS />
         )
     },
+    {
+        path: "/react/validation",
+        exact: false,
+        main: () => (
+            <Validation />
+        )
+    },
+    {
+        path: "/react/formik-yup",
+        exact: false,
+        main: () => (
+            <FormikYup />
+        )
+    },
+    {
+        path: "/react/custom-select",
+        exact: false,
+        main: () => (
+            <CustomSelect />
+        )
+    }
+
+    
+    
 ];
 
 export default routes;
