@@ -5,7 +5,7 @@
     align-items: center;
 }
 .form__item{
-    width: 30%;
+    width: 90%;
     display: flex;
     justify-content:space-between;
     flex-direction: column;

@@ -1,0 +1,13 @@
+.active{
+    background-color: red;
+}
+.eventNone {
+    pointer-events: none;
+    background-color:  transparent;
+}
+.cursor {
+    cursor: pointer;
+}
+.active_q {
+    border: 1px solid blue;
+}

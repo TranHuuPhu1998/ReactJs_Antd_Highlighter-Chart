@@ -1,25 +1,23 @@
-import React from 'react'
-import { Card, Avatar } from 'antd';
+import React from 'react';
 
-const { Meta } = Card;
+import styles from './card.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookReader } from '@fortawesome/free-solid-svg-icons';
 
+const openCard = (history,id) =>{
+    history.push("/info",id);
+}
 
-function card(props) {
+function card({id,name,discription,history}) {
   return (
-    <Card
-      cover={
-        <img
-          alt="example"
-          src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-        />
-      }
+    <div
+      className={styles.card_item}
+      onClick={()=>openCard(history,id,name)}
     >
-      <Meta
-        avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-        title="Card title"
-        description="This is the description"
-      />
-    </Card>
+      <p className={styles.card_icon}><FontAwesomeIcon style={{'width':'100%', 'height':'100%'}} icon={faBookReader} /></p>
+      <p className={styles.card_title}>{name}</p>
+      <p className={styles.card_dis}>{discription}</p>
+    </div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Group from "../components/Group/group.js";
+
 import Method from "../components/Method/method.js";
 import LinkCard from "../components/ListCard/listCard.js";
 import Rules from "../components/Rules/Rules.js";
@@ -12,19 +12,14 @@ import ReactChartJS from "../components/ReactChartJs/Chart.js";
 import Validation from "../components/ReactValidation/Validation.js";
 import FormikYup from "../components/ReactValidation/FormikYup.js";
 import CustomSelect from "../components/CustomSelect/CustomSelect.js";
+import ReactCkeditor from "../components/Ckeditor/Ckeditor.js";
+import CardInfo from "../components/CardInfo/cardInfo.js";
 export const routes = [
     {
         path: "/",
         exact: true,
-        main: () => (
-            <LinkCard />
-        )
-    },
-    {
-        path: "/group",
-        exact: false,
         main: ({ match, history }) => (
-            <Group match={match} history={history} />
+            <LinkCard match={match} history={history}/>
         )
     },
     {
@@ -91,6 +86,20 @@ export const routes = [
         )
     },
     {
+        path: "/react/custom-select",
+        exact: false,
+        main: () => (
+            <CustomSelect />
+        )
+    },
+    {
+        path: "/react/ckeditor",
+        exact: false,
+        main: () => (
+            <ReactCkeditor />
+        )
+    },
+    {
         path: "/react/formik-yup",
         exact: false,
         main: () => (
@@ -98,15 +107,13 @@ export const routes = [
         )
     },
     {
-        path: "/react/custom-select",
+        path: "/info",
         exact: false,
-        main: () => (
-            <CustomSelect />
+        main: ({ match, history }) => (
+            <CardInfo match={match} history={history}/>
         )
     }
 
-    
-    
 ];
 
 export default routes;

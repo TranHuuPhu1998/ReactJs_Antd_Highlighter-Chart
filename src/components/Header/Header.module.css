@@ -4,6 +4,7 @@
     box-shadow: 1px 0px 1px 1px  navy;
     padding-top:10px;
     padding-bottom: 10px;
+    display: block;
 }
 .header_logo span{
     cursor: pointer;
@@ -19,4 +20,7 @@
 }
 .header{
     background-color:white;
+}
+.header_col{
+    width: 100%;
 }

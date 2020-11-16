@@ -3,19 +3,17 @@ import { Menu } from 'antd';
 import {Link} from "react-router-dom";
 import styles from './Menu.module.css';
 const { SubMenu } = Menu;
+
 const handleClick = e => {
 	// console.log('click ', e);
 };
 
 function MenuCom() {
-
-	
-
 	return (
 		<Menu
 			onClick={handleClick}
 			className={styles.menu}
-			style={{width: 320,height:'100%',position:"fixed",top:67}}
+			// style={{width: 318,height:'100%',position:"fixed",top:67}}
 			defaultSelectedKeys={["1"]}
 			defaultOpenKeys={["sub1"]}
 			mode="inline"
@@ -85,12 +83,11 @@ function MenuCom() {
 						GoogleMapReact
 						</Link>
 				</Menu.Item>	
-				<Menu.Item key="11">
-						<Link to="/react/formik-yup">
-						Formik and Yup
+				<Menu.Item key="10">
+						<Link to="/react/ckeditor">
+						React CKEditor
 						</Link>
-				</Menu.Item>		
-		
+				</Menu.Item>
 			</SubMenu>
 			<SubMenu
 				key="sub5"

@@ -1,14 +1,5 @@
-/* Colors */
-/*
-dark blue: #476A6F
-light blue: #258EA6
-dark green: #519E8A
-medium green: #7EB09B
-light green: #A3C4BC
-*/
 
 .wrapper {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -110,7 +101,6 @@ light green: #A3C4BC
     color: #fff;
     border: 2px solid #fff;
     width: 100%;
-    margin-top: 1em;
     padding: 8px 0px;
     font-size: 1em;
     font-weight: lighter;

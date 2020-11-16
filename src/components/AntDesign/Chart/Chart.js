@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Line } from '@ant-design/charts';
-
+import { Row, Col } from 'antd';
 function Chart(props) {
 
     // const [dataGDP , setDataGDP] = useState([]);
@@ -47,7 +47,8 @@ function Chart(props) {
         return 0;
     };
     return (
-        <div>
+        <Row>
+            <Col span={20} offset={2}>
             <button type="button" onClick={downloadImage} style={{ marginRight: 24 }}>
             Export picture
             </button>
@@ -55,8 +56,8 @@ function Chart(props) {
             Get chart information
             </button>
             <Line {...config} chartRef={ref} />
-            {/* <Line {...config_tow} chartRef={ref} /> */}
-        </div>
+            </Col>
+        </Row>
     );
 }
 

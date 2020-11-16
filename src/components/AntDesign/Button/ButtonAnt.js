@@ -59,7 +59,7 @@ function ButtonAnt(){
   return (
     <>
       <Row>
-        <Col span={10} offset={1}>
+        <Col span={10} offset={2}>
           <Card title="Examples Button">
             <Space size="middle" align="center" style={{ display: 'flex', flexWrap: "wrap" }}>
               <Button type="primary">Primary Button</Button>

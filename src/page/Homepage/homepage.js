@@ -1,7 +1,7 @@
 import React from 'react';
-import MenuCom from "../../components/Menu/Menu.js";
-import Header from '../../components/Header/header.js';
 
+import Header from '../../components/Header/header.js';
+import HeaderRight from '../../components/Header/headerRight.js';
 import { Row, Col } from 'antd';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "../../routes/routerlayout"
@@ -25,15 +25,18 @@ function homepage(props) {
     };
     return (
         <Router>
-            <Header/>
-            <Row>
-                <Col span={4}>
-                    <MenuCom/>
+            
+            <Row style={{height:'100vh'}}>
+                <Col span={4} style={{height: '100vh',position: 'fixed', width:' 100%',zIndex: 1,backgroundColor: "#001529"}}>
+                    <Header/>
                 </Col>
-                <Col span={20} style={{position:"relative",top:150}}>
-                    <Switch>
-                        {showRouterPage(routes)}
-                    </Switch>
+                <Col span={20} style={{marginLeft:'auto'}}>
+                    <HeaderRight/>
+                    <div style={{marginTop:'100px'}}>
+                        <Switch>
+                            {showRouterPage(routes)}
+                        </Switch>
+                    </div>
                 </Col>
             </Row>
         </Router>

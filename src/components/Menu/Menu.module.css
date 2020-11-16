@@ -17,11 +17,33 @@
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,									  transparent)
 }
-.menu{
-	width: 317;
-	height:100%;
-	position:"fixed" !important;
-	top:67
+*{
+	margin:0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	color: white !important;
+}
+.menu_title{
+	text-align: left;
+	color: #1d73e8;
+	font-weight: bold;
+}
+.menu_item{
+	text-align: left;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.menu_wapper{
+	background-color: #051e34;
+	opacity: 0.8;
+	position: relative;
+	height: 100vh;
+	padding-left: 10%;
+	padding-top: 10%;
 }
 @media screen and (max-width:768px){
 	.menu{

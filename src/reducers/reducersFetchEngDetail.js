@@ -4,7 +4,7 @@ var initialState = [];
 
 const myReducer = (state = initialState, action) => {
     switch (action.type) {
-        case Types.FETCH_ALL_DATA:
+        case Types.FETCH_ENG_DEATIL_DATA:
             state = action.payload.data
             return [...state];
         default:
